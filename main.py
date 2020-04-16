@@ -8,6 +8,7 @@ background = pygame.image.load('assets/background.png')
 game = Game()
 running = True
 while(running):
+    game.TextToPlay.setNumero(game.inPlaying.numero)
     screen.blit(background,(0,0))
     for case in game.cases:
         if case.isTaked ==False:
